@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prostacks Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form>
+    <div id="main">
+      <div id="window">
+        <input type="text" id="secondEntry" value=""></input>
+        <input type="text" id="textEntry" autofocus="autofocus" value="0"></input>
+      </div>
+      <div class="buttons">
+        <button type="reset" onclick="setCaretPosition(mainSelect, mainSelect.value.length)" id="clearAll" class="firstRow">AC</button>
+        <button type="button" id="negate" class="firstRow">+/-</button>
+        <button type="button" id="percent" class="firstRow" value="%">%</button>
+        <button type="button" id="divide" class="operators" value="/">÷</button>
+      
+      
+        <button type="button" class="numbers" value="7">7</button>
+        <button type="button" class="numbers" value="8">8</button>
+        <button type="button" class="numbers" value="9">9</button>
+        <button type="button" id="multiply" class="operators" value="*">&times;</button>
+        
+        <button type="button" class="numbers" value="4">4</button>
+        <button type="button" class="numbers" value="5">5</button>
+        <button type="button" class="numbers" value="6">6</button>
+        <button type="button" id="minus" class="operators" value="-">-</button>
+        
+        <button type="button" class="numbers" value="1">1</button>
+        <button type="button" class="numbers" value="2">2</button>
+        <button type="button" class="numbers" value="3">3</button>
+        <button type="button" id="add" class="operators" value="+">+</button>
+        
+        <button type="button" id="zero" class="numbers" value="0">0</button>
+        <button type="button" id="decimal" value=".">.</button>
+        <button type="button" id="equals"  value="=">=</button>
+      </div>
+    </div>
+  </form>
+    <script src="js/app.js"></script>
+  </body>
+</html>
